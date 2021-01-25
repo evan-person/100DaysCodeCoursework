@@ -120,14 +120,16 @@ def negSamplingLossAndGradient(
 	
     T = -U @ centerWordVec
     T[0] = -T[0]
-    T[-1] = -T[-1]
+
     T = sigmoid(T)
 	
     loss = -np.sum(np.log(T))
+	
+    R = 1 - T
+    R[0] = - R[0]
 
-
-    gradCenterVec = U.T @ (1-T)
-    gradOutside = (1-T[:,np.newaxis]) @ centerWordVec[np.newaxis, :]
+    gradCenterVec = U.T @ R
+    gradOutside = (R[:,np.newaxis]) @ centerWordVec[np.newaxis, :]
 	
     gradOutsideVecs = np.zeros_like((outsideVectors))
 
