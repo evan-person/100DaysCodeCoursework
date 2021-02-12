@@ -1,9 +1,9 @@
 # variousCodingCoursework
 Making a repository for various projects I work on for online/book/etc. courses
 
+Stanford CS224N homeworks 1-3 were completed. Code is generally in Jupyter notebooks.
 
-First segment will be coursework for the Stanford CS224N: Natural Language Processing with Deep Learning.
+Cryptopals Challenge Set 1 is ongoing in Python.
 
-Also planning to work through K&R book to improve my C.
+Also planning to work through K&R book to improve my C. CS231n is also on the future agenda.
 
-Planning to do the CryptoPals challenges in Python (not Jupyter) to boost my Python and cryptography abilities.
